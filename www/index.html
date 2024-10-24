@@ -38,6 +38,7 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+        
         init();
     });
     
@@ -169,12 +170,12 @@
     function alarm(){
         var canvas = $("#mycanvas")[0]; 
         var ctx = canvas.getContext("2d"); 
-        var img = new Image(); 　img.src = "ksuisbg.gif";      
+        var img = new Image(); 　img.src = "okane.jpeg";      
         img.onload = function() {     
         ctx.drawImage(img, 0, 0, 300, 300); 
         };
         var audio = new Audio(); 
-        audio.src = "pin.wav";
+        audio.src = "money.mp3";
         audio.play();
         
     }
